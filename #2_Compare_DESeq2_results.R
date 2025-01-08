@@ -144,12 +144,12 @@ Input_TMPRSS2_filtered = Input_TMPRSS2 %>% filter(score == 'pass', baseMean > 50
 # Write out results of DESeq2 analyses
 write_tsv(Input_uPA, "Input_uPA.xls")
 write_tsv(Input_FXIIa, "Input_FXIIa.xls")
-write_tsv(Input_TMPRSS2, "Input_uPA.xls")
+write_tsv(Input_TMPRSS2, "Input_TMPRSS2.xls")
 
 # Write our results of DESeq2 analysis that are filtered for significance threasholds
 write_tsv(Input_uPA_filtered, "Input_uPA_filtered.xls")
 write_tsv(Input_FXIIa_filtered, "Input_FXIIa_filtered.xls")
-write_tsv(Input_TMPRSS2_filtered, "Input_uPA_filtered.xls")
+write_tsv(Input_TMPRSS2_filtered, "Input_TMPRSS2_filtered.xls")
 
 # Compare uPA XIIa and TMPRSS2
 FXIIa_match = full_join(Input_uPA_filtered,
